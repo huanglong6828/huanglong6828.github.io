@@ -41,7 +41,7 @@ by [@huanglong](https://github.com/huanglong6828)
 
 4. 4、出现紧急bug时，合并 master 分支到 debug 分支。重新走123流程
 
-  ![An image](../public/git.png)
+  ![An image](../.vuepress/public/git.png)
 
 ## 提交规范
 
