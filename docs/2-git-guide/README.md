@@ -59,6 +59,55 @@ by [@huanglong](https://github.com/huanglong6828)
 
   ````
 
+## 建议 Emojis
+
+| Emoji | Raw Emoji Code | Description |
+|:---:|:---:|---|
+| :art: | `:art:` | 在改进代码的**格式**/结构时 |
+| :newspaper: | `:newspaper:` | 当创建一个 **新文件** |
+| :pencil: | `:pencil:` | 当**执行微小的修改/修改**代码或语言时 |
+| :racehorse: | `:racehorse:` | 当改善**性能** |
+| :books: | `:books:` | 当写 **文档** |
+| :bug: | `:bug:` | 当报告一个**bug**时，使用[' @FIXME '](https://github.com/slashsbin/styleguide-todo-grammar#bug-report)注释标签 |
+| :ambulance: | `:ambulance:` | 当修复一个**错误** |
+| :penguin: | `:penguin:` | 当在**Linux**上修复某些东西时 |
+| :apple: | `:apple:` | 当在**Mac OS**上修复一些东西时 |
+| :checkered_flag: | `:checkered_flag:` | 当在**Windows**上修复某些东西时|
+| :fire: | `:fire:` | 当**删除代码**或文件时，可以加上' @CHANGED '注释标签 |
+| :tractor: | `:tractor:` | 当**更改文件结构**。通常与:art:|
+| :hammer: | `:hammer:` | 当**重构代码** |
+| :umbrella: | `:umbrella:` | 当添加**tests** |
+| :microscope: | `:microscope:` | 当添加**代码覆盖率** |
+| :green_heart: | `:green_heart:` | 当修复**CI**构建时 |
+| :lock: | `:lock:` | 当处理**安全** |
+| :arrow_up: | `:arrow_up:` | 当升级开发**依赖** |
+| :arrow_down: | `:arrow_down:` | 当降低开发**依赖** |
+| :fast_forward: | `:fast_forward:` | 当从**旧版本/分支**正向移植特性时 |
+| :rewind: | `:rewind:` | 当从**新版本/分支**中向后移植特性时 |
+| :shirt: | `:shirt:` | 当删除**linter**/严格/弃用警告 |
+| :lipstick: | `:lipstick:` | 当改善**UI** |
+| :wheelchair: | `:wheelchair:` | 当提高**易访问性** |
+| :globe_with_meridians: | `:globe_with_meridians:` | 在处理**全球化**/国际化/i18n/g11n时 |
+| :construction: | `:construction:` | **WIP**(正在进行的工作)提交，可能带有' @REVIEW '注释标签 |
+| :gem: | `:gem:` | 新增 **Release** |
+| :bookmark: | `:bookmark:` | **版本** |
+| :tada: | `:tada:` |**初始**提交 |
+| :speaker: | `:speaker:` | 当添加**Logging** |
+| :mute: | `:mute:` |当减少 **Logging** |
+| :sparkles: | `:sparkles:` | 当引入**新的**特性时 |
+| :zap: | `:zap:` | 当引入**不兼容的**特性时，可以使用'@CHANGED'注释标签|
+| :bulb: | `:bulb:` | 新**Idea**，带有“@IDEA”评论标签 |
+| :snowflake: | `:snowflake:` | 改变**配置**，通常是:penguin: or:ribbon: or:rocket: |
+| :ribbon: | `:ribbon:` |客户要求的应用程序**定制**，带有“@HACK”评论标签 |
+| :rocket: | `:rocket:` | 任何与deployment /**DevOps**相关的内容 |
+| :elephant: | `:elephant:` |**PostgreSQL**数据库特定(迁移，脚本，扩展，…)  |
+| :dolphin: | `:dolphin:` | 特定于数据库(迁移，脚本，扩展，…) |
+| :leaves: | `:leaves:` | **MongoDB**数据库特定(迁移，脚本，扩展，…) |
+| :bank: | `:bank:` | **通用数据库**特定(迁移，脚本，扩展，…) |
+| :whale: | `:whale:` | **码头工人**配置 |
+| :handshake: | `:handshake:` | 当**合并**文件 |
+| :cherries: | `:cherries:` | 当从一个或多个[**Cherry-Pick**](https://gitscm.com/docs/gitcherry-pick)提交时 |
+
 ## 总结
 
 以上规范不一定是必须的，一般是根据实际情况来的，总结下自己工作中的一些问题
