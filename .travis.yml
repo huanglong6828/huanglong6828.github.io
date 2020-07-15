@@ -1,15 +1,14 @@
 language: node_js # node环境
 node_js:
   - lts/*
-install:
-  - yarn install # npm ci
 script:
   - yarn docs:build # 执行命令
 deploy:
-  - provider: pages
-    target_branch: master
-    local_dir: docs/.vuepress/dist # 部署的文件夹文件
-    github-token: $GITHUB_TOKEN # travis服务上的token变量
-    keep-history: true
-    on:
-      branch: sources
+  provider: pages
+  skip-cleanup: true
+  local_dir: docs/.vuepress/dist # 部署的文件夹文件
+  github-token: $GITHUB_TOKEN # travis服务上的token变量
+  target-branch: master # 集成发布到master上 因为现在github pages只能以master分支展示
+  keep-history: true
+  on:
+    branch: sources
