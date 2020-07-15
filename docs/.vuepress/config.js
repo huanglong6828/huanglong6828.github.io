@@ -3,13 +3,13 @@
  * @Date: 2020-04-22 11:36:42
  * @Author: 黄龙
  * @LastEditors: 黄龙
- * @LastEditTime: 2020-07-14 15:09:51
+ * @LastEditTime: 2020-07-15 11:40:44
  */
 module.exports = {
   title: 'UnionBigData, Doc.',
   description: '📦 🎨 A api-friendly theme for VuePress.',
   theme: 'api',
-  base: '/doc',
+  base: '/',
   locales: {
     '/': {
       lang: 'zh-hans',
