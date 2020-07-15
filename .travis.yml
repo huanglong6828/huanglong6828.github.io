@@ -6,11 +6,11 @@ install:
 script:
   - yarn docs:build # 执行命令
 deploy:
-  - provider: pages
-    target_branch: master
-    skip-cleanup: true
-    local_dir: docs/.vuepress/dist # 部署的文件夹文件
-    github-token: $GITHUB_TOKEN # travis服务上的token变量
-    keep-history: true
-    on:
-      branch: sources
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vuepress/dist # 部署的文件夹文件
+  github_token: $GITHUB_TOKEN # travis服务上的token变量
+  keep_history: true
+  target_branch: master
+  on:
+    branch: sources
