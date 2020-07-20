@@ -106,7 +106,7 @@ by [@huanglong](https://github.com/huanglong6828)
 | :bank: | `:bank:` | **通用数据库**特定(迁移，脚本，扩展，…) |
 | :whale: | `:whale:` | **码头工人**配置 |
 | :handshake: | `:handshake:` | 当**合并**文件 |
-| :cherries: | `:cherries:` | 当从一个或多个[**Cherry-Pick**](https://gitscm.com/docs/gitcherry-pick)提交时 |
+| :cherries: | `:cherries:` | 当从一个或多个**Cherry-Pick**提交时 |
 
 ## 总结
 
