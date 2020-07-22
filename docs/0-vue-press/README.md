@@ -11,7 +11,7 @@ by [@huanglong](https://github.com/huanglong6828)
 - [Node.js](https://nodejs.org/)
 - [VuePress](https://github.com/vuejs/vuepress)
 - [vuepress-theme-api](https://github.com/sqrthree/vuepress-theme-api)
-- [Travis Cl](https://travis-ci.org)
+- [Travis Cl](https://travis-ci.com)
 - [brew](https://brew.sh/)
 
 ## 环境依赖
@@ -43,7 +43,6 @@ vuepress build
 配置Travis Cl
 
 github在必须从master分支构建。那么我们调整思路，新增一个source分支为代码存储分支，master为构建分支。
-
 
 ```yml
 language: node_js
@@ -123,21 +122,19 @@ travis encrypt 'GITHUB_TOKEN=<YOUR_GITHUB_TOKEN>' --add
 ```yml
 language: node_js
 node_js:
-- lts/*
+  - lts/*
 script:
-- yarn docs:build
+  - yarn docs:build
 deploy:
   provider: pages
   skip-cleanup: true
   local_dir: docs/.vuepress/dist
-  github-token:
-    secure: 加密key
+  github_token: $GITHUB_TOKEN
   target-branch: master
   keep-history: true
   on:
     branch: sources
 env:
   global:
-    secure: 加密key
-
+    - secure: 加密key
 ```
