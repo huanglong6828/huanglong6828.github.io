@@ -1,14 +1,15 @@
-language: node_js # node环境
+language: node_js
 node_js:
-  - lts/*
+- lts/*
 script:
-  - yarn docs:build # 执行命令
+- yarn docs:build
 deploy:
   provider: pages
   skip-cleanup: true
-  local_dir: docs/.vuepress/dist # 部署的文件夹文件
-  github-token: $GITHUB_TOKEN # travis服务上的token变量
-  target-branch: master # 集成发布到master上 因为现在github pages只能以master分支展示
+  local_dir: docs/.vuepress/dist
+  github-token:
+    secure: hR6ubup98ga7la4DppuxwzLpyw4dB7KIQBJKmYa2orNkAXeHXs97nyKGK/HFGEeRh50XyNcX+t1Qnlw/TeiI+F2iIDEjTebTo64T1qvUywFDpiFSCEhx/CYPci7VwAO+obiaQQaqr7ubc3A4yy6tQjh2nu0xq2VsldJFSNR294g/Kp62eBTGMwpg2DWXRAbgz5ktR0VWompY0TvOHbUN1evkbq3JckimpNb076txjqq2uET7hINsv/j2m6sDVSKqtP+NBDc4g86AmfDKVxAZSK37JM5m4E6U+AONn4b/IBC24K9EGq6cb/UbPyF13s1eKw1Gso7ozpG0bnxT+Z17dWfhpVuQOYxMCLBq3lyYXVmAfc1OLwLK7t4oUzuus4s/q2sWx+UXwsCKUKPSnn6NTrmpV8ERTdVNs3pG/p728nojZdvQ45IXtZ3VgWybjF/UqS4ogQiX3W+ecXbpQj+kjpKUTQUEStqbUKWcwt7cW1ZlVRLW2smHEQrt0YN5SgJ9xKurMs8+6CLf8mIwaHhbw3FcashGKQUXvRg+g9oxTNDEm98/wzHhKosXV5IIPwICsehTCRCx/0mv2UVX/j/jjHCGw6a+NsZCzUW1f2jznxUoKWhfytsQBylhyI/sSfO6pScE2vnw9/GDRgJRW9grRA4UCk9PFH9fVMZ577KMrxY=
+  target-branch: master
   keep-history: true
   on:
     branch: sources
