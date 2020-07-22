@@ -104,31 +104,18 @@ deploy:
 brew install travis
 ```
 
-- 确保在 [travis cl](https://travis-ci.org/) sign in with github
 - 然后在项目根目录里，执行命令
 
 ```bash
-travis login —auto
-```
-
-- 修改git设置
-
-```bash
-vi .git/config
-```
-
-- 确保
-
-```bash
-[travis]
-  slug = 是你在travis关联的仓库
+travis login --pro
 ```
 
 - 添加加密环境变量
 
 ```bash
-[travis]
-travis encrypt github-token=xxx --add deploy.github-token
+
+travis encrypt 'GITHUB_TOKEN=<YOUR_GITHUB_TOKEN>' --add
+
 ```
 
 ### 加密后
@@ -144,9 +131,13 @@ deploy:
   skip-cleanup: true
   local_dir: docs/.vuepress/dist
   github-token:
-    secure: 你加密后的key
+    secure: 加密key
   target-branch: master
   keep-history: true
   on:
     branch: sources
+env:
+  global:
+    secure: 加密key
+
 ```
